@@ -47,15 +47,105 @@ h1,
     color: var(--primary-color-text);
     margin-bottom: 8px;
   }
-  .container {
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-  }
-@media only screen and (min-width: 768px) {
-
-  }
-@media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 768px) {
+.title {
+width: 320px;
+height: 7216px;
 
 }
+}
+  .container {
+width: 320px;
+height: 432px;
+top: 56px;
+margin: 0 auto;
+  }
+ @media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+ }
+ @media only screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+ }
+ /*======= Page header =======*/
+ .page-header {
+    padding: 16px;
+
+ }
+ .first-menu {
+    display: none;
+}
+.contacts-list {
+    display: none;
+}
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 320px;
+height: 56px;
+  }
+  .logo-type {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 115зч;
+    font-size: 21px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--accent-color);
+    margin-right: 76px;
+    display: inline-block;
+  }
+  .logo-page {
+    color: var(--primary-color-text);
+  }
+  .menu-open-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    stroke: rgba(47, 47, 55, 1);
+    line-height: 0;
+  }
+/*======= Mobile menu styles ========*/
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999999999;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+}
+.mobile-menu-close-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    stroke: #000000;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.mobile-menu-container {
+    position: relative;
+    right: 0;
+}
+.mobile-nav-menu {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-color-text);
+    padding: 24px 0;
+    display: block;
+    transition: color 300ms linear;
+  }
+  .menu-link:hover,
+  .menu-link:focus {
+    color: var(--page-color);
+  }
